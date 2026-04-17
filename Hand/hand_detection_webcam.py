@@ -57,7 +57,6 @@ while True:
                     1,)
 
                 cv2.circle(img, (x, y), 4, (0, 0, 255), -1)
-
     cv2.imshow("img", img)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):

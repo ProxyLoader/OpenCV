@@ -38,9 +38,8 @@ while True:
 
     rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     mp_image = mp.Image(image_format=mp.ImageFormat.SRGB, data=rgb)
-
     result = detector.detect(mp_image)
-
+    
     if result.hand_landmarks:
         for hand in result.hand_landmarks:
             for i,lm in enumerate(hand):
